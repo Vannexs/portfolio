@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header class="site-header">
+        <!-- ... (Navbar structure remains the same) ... -->
+         <nav class="container nav-container">
+            <a href="#" class="logo">Your Name</a>
+            <ul class="nav-list" id="navList">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                    <i class="fas fa-sun" aria-hidden="true" style="display: none;"></i>
+                </button>
+                <button id="menu-toggle" class="icon-button menu-toggler" aria-label="Toggle menu" aria-expanded="false" aria-controls="navList">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section container">
+             <!-- Add fade-in-up class -->
+             <div class="hero-content fade-in-up">
+                <h1>Hi, I'm Victor Chege</h1>
+                <p class="subtitle">[Your Job Title / Tagline]</p>
+                <p>Welcome to my personal portfolio. Explore my skills, projects, and journey.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-button primary">View Projects</a>
+                    <a href="your_cv.pdf" download="YourName_CV.pdf" class="cta-button secondary">
+                        <i class="fas fa-download" aria-hidden="true"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+         <!-- Add reveal-on-scroll class -->
+        <section id="about" class="about-section container section-padding reveal-on-scroll">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                 <p>I am Victor, a passionate and versatile programmer with experience in HTML, C, C++, and Visual Basic, and I’m expanding my expertise in Python and JavaScript for automation, web development, scripting, and data analysis. 
+                    <br>I thrive on solving complex problems and building efficient solutions, whether it's through backend scripting, web development, or software automation. 
+                    <br>My curiosity also drives me to explore new technologies, and I’m currently diving into AWS cloud computing. Beyond coding, I have a deep interest in languages, actively learning Japanese and Mandarin.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+         <!-- Add reveal-on-scroll class -->
+        <section id="skills" class="skills-section container section-padding reveal-on-scroll">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- Skill items with data-progress -->
+                <div class="skill-item">
+                    <h3>HTML5</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="90">90%</div></div>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS3 & Responsive Design</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="85">85%</div></div>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="20">20%</div></div>
+                </div>
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <div class="progress-bar-container"><div class="progress-bar" data-progress="30">30%</div></div>
+                </div>
+                 <!-- ... More skills ... -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+         <!-- Add reveal-on-scroll class -->
+        <section id="projects" class="projects-section container section-padding reveal-on-scroll">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project cards -->
+                <div class="project-card"> <!-- Optionally add reveal-on-scroll here too for staggered effect -->
+                     <img src="images/placeholder.png" alt="Project 1 Screenshot">
+                     <div class="card-content">
+                         <h3>Project Title 1</h3>
+                         <p>A concise description...</p>
+                         <div class="project-links">
+                             <a href="#" target="_blank" rel="noopener noreferrer">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                             <a href="#" target="_blank" rel="noopener noreferrer">Source Code <i class="fab fa-github"></i></a>
+                         </div>
+                     </div>
+                 </div>
+                 <!-- ... More projects ... -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+         <!-- Add reveal-on-scroll class -->
+        <section id="contact" class="contact-section container section-padding reveal-on-scroll">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Interested in working together or have a question? Feel free to reach out!</p>
+            <ul class="contact-list">
+                <!-- Contact links -->
+                 <li><a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></li>
+                 <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                 <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer-bottom">
+       <!-- ... Footer content ... -->
+        <div class="container">
+            <p>© 2025 Vicor Chege. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
